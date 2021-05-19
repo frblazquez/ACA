@@ -1,0 +1,571 @@
+    <html>
+      <head>
+        <title>Login for the service Moodle</title>
+        <link rel="stylesheet" href="/styles/tequila.css"/>
+        <script language="JavaScript" src="/js/oath.js"></script>
+        <script language="JavaScript" src="/js/tequila.js"></script>
+        <script language="JavaScript" src="/js/keyboard.js"></script>
+      </head>
+      <body>
+  
+    <script>
+       curlang = 'en';
+            me = '/cgi-bin/tequila';
+       certurl = 'https://tequila.epfl.ch/cgi-bin/tequilac/login';
+  
+    </script>
+    <table width="100%" height="100%" id="wholeauthform">
+      <tr>
+        <td valign="middle" id="all">
+          
+    <div id="servdesc" style="display: none; position: absolute; top: 100px; left: 200px; width: 350px; height: 300px; border-color: #CCCCCC; margin: 10px; border-style: solid; background-color: lightyellow;">
+      <h3>&nbsp; Service description :</h3>
+      <blockquote>
+        <table border width="100%" cellpadding="3">
+          <tr><th align="right">         Name </th><td> Moodle    </td></tr>
+          <tr><th align="right">      Contact </th><td> Unknown    </td></tr>
+          <tr><th align="right">     Checking </th><td> Anonymous      </td></tr>
+          <tr><th align="right"> Service host </th><td> 185.25.193.110 </td></tr>
+          <tr>
+            <th align="right">
+              This service is willing to know the following information
+              about yourself.
+            </th>
+            <td>
+              Sciper<br>Username<br>Name<br>Firstname<br>Email<br>Unit<br>Phone<br>Office
+            </td>
+          </tr>
+        </table>
+      </blockquote>
+      <div align="center">
+        <input type="reset" value="OK" onclick="swapservdesc(event);">
+      </div>
+    </div>
+    <script type="text/javascript" language="JavaScript">
+      function swapservdesc (event) {
+        if (!event) event = window.event;
+        var  div = document.getElementById ('servdesc');
+        if (div.style.display == 'none') {
+          var posx = event.pageX;
+          var posy = event.pageY;
+          div.style.top  = posy;
+          div.style.left = posx - 150;
+          div.style.display = 'block';
+        } else {
+          div.style.display = 'none';
+        }
+      }
+    </script>
+  
+          <table border="1" cellspacing="0" align="center" cellpadding="5">
+            <tr>
+              <td >
+                <table width="100%">
+                  <tr>
+                    <td>
+                      <img src="/images/EPFL.gif"
+                           alt="EPFL" 
+                           style="padding: 10px; height: 35px; "
+                           >
+                    </td>
+                    <td  align="right">
+                      <table>
+                        <tr>
+                          
+                          <td>
+                            <div>
+                              <span name="en:title" style="display: inline">Login for the service</span><span name="fr:title" style="display: none">Login pour le service</span><span name="de:title" style="display: none">Login für den Dienst</span>
+                              <br>
+                              <div style="font-weight: bold;"
+                                   onclick="swapservdesc(event)">
+                                Moodle
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            
+
+            <tr>
+              <td align="center"> 
+                <table width="98%" cellspacing="0" bgcolor="white">
+                  <tr>
+                    <td width="219">
+                      <img src="/images/eye.gif" width="200" height="270">
+                    </td>
+                    <td align="right"> 
+  
+    <div style="
+                 width: 500px;
+            text-align: left;
+          border-width: 3px;
+          border-style: ridge;
+          padding-left: 10px;
+          border-color: #EEEEFF;
+      background-color: #EEEEFF;
+    ">
+    <form name="loginform"
+            id="loginform"
+        action="https://tequila.epfl.ch/cgi-bin/tequila/login"
+        method="POST">
+      <input type="hidden"
+               id="requestkey"
+             name="requestkey"
+            value="sl0fksgj35uf3emkgozs6v57h88rtthz">
+  
+    <div style="
+                    height: 20px;
+               padding-top: 3px;
+               margin-left: -10px;
+              margin-right: -1px;
+          background-color: #CCCCCC;
+                 font-size: 14px;
+               font-weight: bold;
+        ">
+      &nbsp;
+      <span name="en:ifyouarelocal" style="display: inline">If you are from</span><span name="fr:ifyouarelocal" style="display: none">Si vous êtes de</span><span name="de:ifyouarelocal" style="display: none">If you are from</span> EPFL (<span name="en:ifyouarelocal2" style="display: inline">Staff or student</span><span name="fr:ifyouarelocal2" style="display: none">Personnel ou étudiant</span><span name="de:ifyouarelocal2" style="display: none">Staff or student</span>)
+    </div>
+    <p>
+  
+    <table width="400" bgcolor="#EEEEFF">
+      <tr>
+        <td align="middle">
+          <table width="100%" cellspacing="0" cellpadding="2">
+            <tr> 
+              <td width="150" align="right">
+                <strong><span name="en:username" style="display: inline">Username</span><span name="fr:username" style="display: none">Username</span><span name="de:username" style="display: none">Benutzername</span>&nbsp;</strong>
+              </td>
+              <td align="left" valign="middle"> 
+                <input type="text" name="username" id="username"
+                       value="" size="30"
+                       style="background-color:#EEEEFF;"
+                       autocomplete="on">
+              </td>
+            </tr>
+
+            <tr> 
+              <td width="150" align="right">
+                <b><span name="en:password" style="display: inline">Password</span><span name="fr:password" style="display: none">Mot de passe</span><span name="de:password" style="display: none">Passwort</span>&nbsp;</b>
+              </td>
+              <td align="left"> 
+                <input type="password" name="password" id="password" size="30"
+                       style="background-color:#EEEEFF;"
+                       autocomplete="on">
+              </td>
+            </tr>
+  
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+              <td align="middle">
+  
+              <a href="https://tequila.epfl.ch/cgi-bin/tequilac/login?requestkey=sl0fksgj35uf3emkgozs6v57h88rtthz">
+                <img src="/images/seccert.gif" border="0" alt="SSL certificate"></a>
+  
+                    <input id="loginbutton"
+                         name="login"
+                        style="display: inline;"
+                         type="image"
+                          src="/images/glogin.gif"
+                       border="0">
+                    <a href="/tequila/help?language=en">
+                      <img src="/images/ghelp.gif" border="0" alt="aide">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      </div>
+      <p>
+  
+      <div id="partnerauthform" style="
+                   width: 500px;
+              text-align: center;
+            border-width: 3px;
+            border-style: ridge;
+            padding-left: 10px;
+            border-color: #EEEEFF;
+        background-color: #EEEEFF;
+        ">
+          <div style="
+                text-align: left;
+                    height: 20px;
+               padding-top: 3px;
+               margin-left: -10px;
+              margin-right: -1px;
+          background-color: #CCCCCC;
+                 font-size: 14px;
+               font-weight: bold;
+              ">
+            &nbsp;
+          <span name="en:ifyouarenotlocal" style="display: inline">Use your Switch AAI login</span><span name="fr:ifyouarenotlocal" style="display: none">Utiliser votre login Switch AAI</span><span name="de:ifyouarenotlocal" style="display: none">Use your Switch AAI login</span>
+        </div>
+        <p style="align: left;">
+  
+        <form name="shibform" action="https://tequila.epfl.ch/cgi-bin/tequila/login" method="POST">
+          <input type="hidden" id="requestkey" name="requestkey" value="sl0fksgj35uf3emkgozs6v57h88rtthz">
+          <select name="wayf" style="background-color:#EEEEEE;">
+            <option value="-" selected="selected">Choose your organization</option>
+      
+            <option value="https://aai-logon.bfh.ch/idp/shibboleth" >
+              BFH - Berner Fachhochschule
+            </option>
+        
+            <option value="https://cern.ch/login" >
+              CERN
+            </option>
+        
+            <option value="https://idp.chuv.ch/idp/shibboleth" >
+              CHUV - University Hospital Lausanne
+            </option>
+        
+            <option value="https://aai-login.careum.ch/idp/shibboleth" >
+              Careum
+            </option>
+        
+            <option value="https://aai-login.ehb-schweiz.ch/idp/shibboleth" >
+              EHB / IFFP / IUFFP - Das eidgenössische Hochschulinstitut für Berufsbildung
+            </option>
+        
+            <option value="https://idp.epfl.ch/idp/shibboleth" >
+              EPFL - EPF Lausanne
+            </option>
+        
+            <option value="https://aai-logon.ethz.ch/idp/shibboleth" >
+              ETH Zürich
+            </option>
+        
+            <option value="https://aai.eawag.ch/idp/shibboleth" >
+              Eawag
+            </option>
+        
+            <option value="https://aai.empa.ch/idp/shibboleth" >
+              Empa
+            </option>
+        
+            <option value="https://aai-login.euresearch.ch/idp/shibboleth" >
+              Euresearch Head Office
+            </option>
+        
+            <option value="https://idp.ffhs.ch/idp/shibboleth" >
+              FFHS - Fernfachhochschule Schweiz
+            </option>
+        
+            <option value="https://aai-login.fhgr.ch/idp/shibboleth" >
+              FHGR - Fachhochschule Graubünden
+            </option>
+        
+            <option value="https://aai-logon.fhnw.ch/idp/shibboleth" >
+              FHNW - Fachhochschule Nordwestschweiz
+            </option>
+        
+            <option value="https://aai-logon.fhsg.ch/idp/shibboleth" >
+              FHS St. Gallen
+            </option>
+        
+            <option value="http://adfs3.fmi.ch/adfs/services/trust" >
+              FMI - Friedrich Miescher Institute
+            </option>
+        
+            <option value="https://login.teologialugano.ch/idp/shibboleth" >
+              FTL - Facoltà di Teologia di Lugano
+            </option>
+        
+            <option value="https://idp.fernuni.ch/idp/shibboleth" >
+              FernUni Schweiz
+            </option>
+        
+            <option value="https://aai-login.hepl.ch/idp/shibboleth" >
+              HEP Vaud - Haute école pédagogique du canton de Vaud
+            </option>
+        
+            <option value="https://aai-login.hep-bejune.ch/idp/shibboleth" >
+              HEP-BEJUNE – Pädagogische Hochschule - BEJUNE
+            </option>
+        
+            <option value="https://aai-loginhep.edufr.ch/idp/shibboleth" >
+              HEP-PH FR - Pädagogische Hochschule Freiburg
+            </option>
+        
+            <option value="https://aai-logon.hes-so.ch/idp/shibboleth" >
+              HES-SO - Haute École Spécialisée de Suisse occidentale
+            </option>
+        
+            <option value="https://aai.hftm.ch/idp/shibboleth" >
+              HFTM - Höhere Fachschule für Technik Mittelland
+            </option>
+        
+            <option value="https://idp.hslu.ch/idp/shibboleth" >
+              HSLU - Hochschule Luzern
+            </option>
+        
+            <option value="https://aai-login.hsr.ch/idp/shibboleth" >
+              HSR - Hochschule für Technik Rapperswil
+            </option>
+        
+            <option value="https://aai.hcuge.ch/idp/shibboleth" >
+              HUG - Hôpitaux Universitaires de Genève
+            </option>
+        
+            <option value="https://aai-logon.fh-hwz.ch/idp/shibboleth" >
+              HWZ - Hochschule für Wirtschaft Zürich
+            </option>
+        
+            <option value="https://aai-login.hfh.ch/idp/shibboleth" >
+              HfH - Interkantonale Hochschule für Heilpädagogik
+            </option>
+        
+            <option value="https://aai.idiap.ch/idp/shibboleth" >
+              Idiap Research Institute
+            </option>
+        
+            <option value="https://aai.insel.ch/idp/shibboleth" >
+              Insel Gruppe
+            </option>
+        
+            <option value="https://idp.graduateinstitute.ch/idp/shibboleth" >
+              Institut de hautes études internationales et du développement
+            </option>
+        
+            <option value="https://aai.ntb.ch/idp/shibboleth" >
+              NTB - Hochschule für Technik Buchs
+            </option>
+        
+            <option value="https://aai.phzg.ch/idp/shibboleth" >
+              PH Zug - Pädagogische Hochschule Zug
+            </option>
+        
+            <option value="https://aai01.phzh.ch/idp/shibboleth" >
+              PH Zürich - Pädagogische Hochschule Zürich
+            </option>
+        
+            <option value="https://aai-login.phbern.ch/idp/shibboleth" >
+              PHBern - Pädagogische Hochschule Bern
+            </option>
+        
+            <option value="https://aai-login.ph-gr.ch/idp/shibboleth" >
+              PHGR - Pädagogische Hochschule Graubünden
+            </option>
+        
+            <option value="https://idp.phlu.ch/idp/shibboleth" >
+              PHLU - Pädagogische Hochschule Luzern
+            </option>
+        
+            <option value="https://aai-login.phsg.ch/idp/shibboleth" >
+              PHSG - Pädagogische Hochschule St.Gallen
+            </option>
+        
+            <option value="https://idp.phsz.ch/idp/shibboleth" >
+              PHSZ - Pädagogische Hochschule Schwyz
+            </option>
+        
+            <option value="https://aai-logon.phtg.ch/idp/shibboleth" >
+              PHTG - Pädagogische Hochschule Thurgau
+            </option>
+        
+            <option value="https://aai-logon.hepvs.ch/idp/shibboleth" >
+              PHVS - Pädagogische Hochschule Wallis
+            </option>
+        
+            <option value="https://aai-login.pmodwrc.ch/idp/shibboleth" >
+              PMOD/WRC - Observatorium Davos
+            </option>
+        
+            <option value="https://aai-logon.psi.ch/idp/shibboleth" >
+              PSI - Paul Scherrer Institut
+            </option>
+        
+            <option value="https://aai-logon.slsp.ch/idp/shibboleth" >
+              SLSP - Swiss Library Service Platform Mitarbeitende
+            </option>
+        
+            <option value="https://aai-login.snf.ch/idp/shibboleth" >
+              SNF - Schweizerischer Nationalfonds
+            </option>
+        
+            <option value="https://login2.supsi.ch/idp/shibboleth" >
+              SUPSI - Scuola Universitaria Professionale della Svizzera Italiana
+            </option>
+        
+            <option value="https://aai-logon.switch.ch/idp/shibboleth" >
+              SWITCH Mitarbeitende
+            </option>
+        
+            <option value="https://eduid.ch/idp/shibboleth" >
+              SWITCH edu-ID
+            </option>
+        
+            <option value="https://login2.usi.ch/idp/shibboleth" >
+              Università della Svizzera italiana
+            </option>
+        
+            <option value="https://aai-logon.unibas.ch/idp/shibboleth" >
+              Universität Basel
+            </option>
+        
+            <option value="https://aai-idp.unibe.ch/idp/shibboleth" >
+              Universität Bern
+            </option>
+        
+            <option value="https://aai.unifr.ch/idp/shibboleth" >
+              Universität Freiburg
+            </option>
+        
+            <option value="https://idp.unige.ch/idp/shibboleth" >
+              Universität Genf
+            </option>
+        
+            <option value="https://aai-logon.uni.li/idp/shibboleth" >
+              Universität Liechtenstein
+            </option>
+        
+            <option value="https://aai-logon.unilu.ch/idp/shibboleth" >
+              Universität Luzern
+            </option>
+        
+            <option value="https://aai.unisg.ch/idp/shibboleth" >
+              Universität St. Gallen
+            </option>
+        
+            <option value="https://aai-idp.uzh.ch/idp/shibboleth" >
+              Universität Zürich
+            </option>
+        
+            <option value="https://aai-login.balgrist.ch/idp/shibboleth" >
+              Universitätsklinik Balgrist
+            </option>
+        
+            <option value="https://aai-logon.unispital.ch/idp/shibboleth" >
+              Universitätsspital Zürich
+            </option>
+        
+            <option value="https://aai.unil.ch/idp/shibboleth" >
+              Université de Lausanne
+            </option>
+        
+            <option value="https://aai-login.unine.ch/idp/shibboleth" >
+              Université de Neuchâtel
+            </option>
+        
+            <option value="https://aai-logon.vho-switchaai.ch/idp/shibboleth" >
+              VHO - Virtual Home Organization
+            </option>
+        
+            <option value="https://aai-logon.wsl.ch/idp/shibboleth" >
+              WSL - Eidg. Forschungsanstalt für Wald, Schnee und Landschaft
+            </option>
+        
+            <option value="https://aai.zhaw.ch/idp/shibboleth" >
+              ZHAW - Zürcher Hochschule für Angewandte Wissenschaften
+            </option>
+        
+            <option value="https://aai-logon.zhdk.ch/idp/shibboleth" >
+              ZHdK - Zürcher Hochschule der Künste
+            </option>
+        
+            <option value="https://aai-logon.zhbluzern.ch/idp/shibboleth" >
+              Zentral- und Hochschulbibliothek Luzern
+            </option>
+        
+            <option value="https://login-idp.libraries.ch/idp/shibboleth" >
+              libraries.ch
+            </option>
+        
+            <option value="https://aai-login.swissuniversities.ch/idp/shibboleth" >
+              swissuniversities
+            </option>
+        
+          </select>
+          <p>
+          <input type="submit" value="OK"/>
+        </form>
+      
+      </div>
+      <p>
+  
+                  </td>
+                </tr>
+              </table>
+  
+            </tr>
+            <tr>
+              <td colspan="2">
+                <table width="100%">
+                  <tr>
+  
+                    <td>
+                      <div id="keyboard" style="display: none">
+                        <img id="keyboardimg"
+                             src="/images/keyboard_min.gif"
+                             onclick="insertchar(event);"
+                             title="Software keyboard"/>
+                        <script type="text/javascript" language="JavaScript">
+                          setfocustrap ();
+                          //document.getElementById ('password').focus ();
+                        </script>
+                        </div>
+                        <div id="minikbd" style="display: block">
+                          <img src="/images/minikbd.jpg"
+                               onclick="swapkeyboard ();">
+                        </div>
+                      </td>
+  
+            <td align="right">
+  [<a href="#" onclick="swaplanguage ('en');">English</a>]
+[<a href="#" onclick="swaplanguage ('fr');">Français</a>]
+[<a href="#" onclick="swaplanguage ('de');">Deutsch</a>]
+
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <script type="text/javascript" language="JavaScript">
+      function addfragment (form, fragment) {
+        var   input = document.createElement ('input');
+        input.type  = 'hidden';
+        input.name  = 'fragment';
+        input.value = fragment;
+        form.appendChild (input);          
+      }
+      var href = document.location.href;
+      var frag = null;
+      if (match = href.match (/\#(.*)$/)) { // fragment
+        frag = match [1];
+      }
+      if (document.loginform) {
+        if (window.self != window.top) { // Not top level window
+          var   inframe = document.createElement ('input');
+          inframe.type  = 'hidden';
+          inframe.name  = 'inframe';
+          inframe.value = 1;
+          document.loginform.appendChild (inframe);
+        }
+        if (frag) {
+          addfragment (document.loginform, frag);
+        }
+        document.loginform.username.focus ();
+      }
+    </script>  
+  
+      </body>
+    </html>
+  
