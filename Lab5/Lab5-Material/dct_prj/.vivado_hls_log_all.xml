@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'dct_1d2' consists of the following:&#xA;&#x9;'mul' operation of DSP[117] ('mul_ln61_7', dct.cpp:61) [112]  (2.84 ns)&#xA;&#x9;'add' operation of DSP[117] ('add_ln63_5', dct.cpp:63) [117]  (2.95 ns)&#xA;&#x9;'add' operation of DSP[118] ('add_ln63_6', dct.cpp:63) [118]  (2.95 ns)" projectName="dct_prj" solutionName="solution3" date="2021-05-10T09:43:40.349+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (8.74ns) exceeds the target (target clock period: 8ns, clock uncertainty: 1ns, effective delay budget: 7ns)." projectName="dct_prj" solutionName="solution3" date="2021-05-10T09:43:40.344+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('src_load_5', dct.cpp:61) on array 'src' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'src'." projectName="dct_prj" solutionName="solution3" date="2021-05-10T09:43:40.335+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution3" date="2021-05-10T09:43:40.277+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution3" date="2021-05-10T09:43:40.270+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution2" date="2021-05-10T09:39:00.791+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution2" date="2021-05-10T09:39:00.788+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'DCT_Outer_Loop' (dct.cpp:55:29) in function 'dct_1d' : &#xA;&#xA;&#xA;the outer loop is not a perfect loop because there is nontrivial logic in the loop latch." projectName="dct_prj" solutionName="solution2" date="2021-05-10T09:39:00.489+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution1" date="2021-05-10T08:33:32.382+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution1" date="2021-05-10T08:33:32.373+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

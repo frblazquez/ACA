@@ -1,0 +1,20 @@
+Starting C simulation ...
+/home/francisco/xilinx/Vivado/2019.2/bin/vivado_hls /home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509/dct_prj/solution1/csim.tcl
+INFO: [HLS 200-10] Running '/home/francisco/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'francisco' on host 'frblazquezm-PC' (Linux_x86_64 version 5.8.0-50-generic) on Mon May 10 08:30:56 CEST 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509'
+Sourcing Tcl script '/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509/dct_prj/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project '/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509/dct_prj'.
+INFO: [HLS 200-10] Opening solution '/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509/dct_prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../dct_test.cpp in debug mode
+   Compiling ../../../../dct.cpp in debug mode
+   Generating csim.exe
+Test passed !
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Finished C simulation.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dct.cpp" path="/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509/dct.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="dct_test.cpp" path="/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509/dct_test.cpp"/>
+    <originFiles name="in.dat" path="/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509/in.dat"/>
+    <originFiles name="out.golden.dat" path="/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Labs/Lab5-Material-20210509/out.golden.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
