@@ -1,0 +1,14 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="kernel1" label="kernel1_for" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="kernel1" label="kernel1_for" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="kernel1" label="kernel1_loop" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

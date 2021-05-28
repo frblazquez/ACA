@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel1/array' to 'kernel1/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel1" solutionName="solution3" date="2021-05-11T08:57:12.582+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel1/array' to 'kernel1/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel1" solutionName="solution2" date="2021-05-11T08:51:56.506+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel1/array' to 'kernel1/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel1" solutionName="solution1" date="2021-05-11T08:51:14.708+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

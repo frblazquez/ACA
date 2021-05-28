@@ -1,0 +1,49 @@
+INFO: [HLS 200-10] Running '/home/francisco/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'francisco' on host 'frblazquezm-PC' (Linux_x86_64 version 5.8.0-50-generic) on Tue May 11 08:56:38 CEST 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Homeworks/homework_3/kernels/kernel1'
+Sourcing Tcl script '/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Homeworks/homework_3/kernels/kernel1/prj_kernel1/solution3/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Homeworks/homework_3/kernels/kernel1/prj_kernel1'.
+INFO: [HLS 200-10] Adding design file 'kernel1.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'kernel1_test.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Homeworks/homework_3/kernels/kernel1/prj_kernel1/solution3'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel1.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 822 ; free virtual = 5885
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 822 ; free virtual = 5885
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 817 ; free virtual = 5884
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 817 ; free virtual = 5884
+INFO: [HLS 200-489] Unrolling loop 'kernel1_loop' (kernel1.cpp:7) in function 'kernel1' completely with a factor of 1024.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 809 ; free virtual = 5847
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1579.395 ; gain = 1166.004 ; free physical = 131 ; free virtual = 5154
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel1' ...
+WARNING: [SYN 201-107] Renaming port name 'kernel1/array' to 'kernel1/array_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 45.26 seconds; current allocated memory: 153.169 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.69 seconds; current allocated memory: 179.612 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel1/array_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel1' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'kernel1'.
+INFO: [HLS 200-111]  Elapsed time: 14.5 seconds; current allocated memory: 241.039 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 224.77 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1579.395 ; gain = 1166.004 ; free physical = 134 ; free virtual = 5126
+INFO: [VHDL 208-304] Generating VHDL RTL for kernel1.
+INFO: [VLOG 209-307] Generating Verilog RTL for kernel1.
+INFO: [HLS 200-112] Total elapsed time: 79.41 seconds; peak allocated memory: 241.039 MB.
