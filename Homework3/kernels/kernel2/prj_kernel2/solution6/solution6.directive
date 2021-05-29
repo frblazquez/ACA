@@ -1,0 +1,16 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="kernel2" label="kernel_2_loop" functionLabel="">
+            <pragma name="DEPENDENCE">
+                <option name="variable" value="array"/>
+                <option name="array" value="" positionalBoolean="class"/>
+                <option name="inter" value="" positionalBoolean="type"/>
+                <option name="true" value="" positionalBoolean="dependent"/>
+            </pragma>
+        </directive>
+        <directive functionName="kernel2" label="kernel_2_loop" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
