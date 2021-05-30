@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="prj_kernel3" solutionName="solution2" date="2021-05-16T23:10:07.684+0200"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xA;   between wire write on port 'hist_0' (kernel3.cpp:6) and wire read on port 'hist_0' (kernel3.cpp:6)." projectName="prj_kernel3" solutionName="solution4" date="2021-05-16T23:20:24.602+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between wire write on port 'hist_0' (kernel3.cpp:6) and wire read on port 'hist_0' (kernel3.cpp:6)." projectName="prj_kernel3" solutionName="solution4" date="2021-05-16T23:19:01.000+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between wire write on port 'hist_0' (kernel3.cpp:6) and wire read on port 'hist_0' (kernel3.cpp:6)." projectName="prj_kernel3" solutionName="solution4" date="2021-05-16T23:19:00.948+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between wire write on port 'hist_0' (kernel3.cpp:6) and wire read on port 'hist_0' (kernel3.cpp:6)." projectName="prj_kernel3" solutionName="solution4" date="2021-05-16T23:19:00.891+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'hist' (kernel3.cpp:3) accessed through non-constant indices on dimension 1 (kernel3.cpp:6:9), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="prj_kernel3" solutionName="solution4" date="2021-05-16T23:15:28.132+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 6, distance = 1, offset = 1)&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="solution2" date="2021-05-11T09:37:51.548+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="solution2" date="2021-05-11T09:37:51.540+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="solution2" date="2021-05-11T09:37:51.530+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="solution2" date="2021-05-11T09:37:51.523+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="solution2" date="2021-05-11T09:37:51.516+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel3' (Loop: kernel3_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'store' operation ('hist_addr_write_ln6', kernel3.cpp:6) of variable 'tmp', kernel3.cpp:6 on array 'hist' and 'load' operation ('hist_load', kernel3.cpp:6) on array 'hist'." projectName="prj_kernel3" solutionName="solution2" date="2021-05-11T09:37:51.507+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
