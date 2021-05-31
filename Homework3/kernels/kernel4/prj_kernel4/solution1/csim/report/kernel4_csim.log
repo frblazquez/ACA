@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../kernel4_test.cpp in debug mode
+   Compiling ../../../../kernel4.cpp in debug mode
+   Generating csim.exe
+obj/kernel4_test.o: In function `main':
+/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Homeworks/homework_3/kernels/kernel4/prj_kernel4/solution1/csim/build/../../../../kernel4_test.cpp:16: undefined reference to `kernel4(int*, int*, int)'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:402: csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

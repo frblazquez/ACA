@@ -1,0 +1,469 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel4.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 1041 ; free virtual = 5977
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 1041 ; free virtual = 5977
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 1036 ; free virtual = 5975
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'kernel4' (kernel4.cpp:3) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 1036 ; free virtual = 5975
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 1018 ; free virtual = 5957
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 939.395 ; gain = 526.004 ; free physical = 1018 ; free virtual = 5957
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel4' ...
+WARNING: [SYN 201-107] Renaming port name 'kernel4/array' to 'kernel4/array_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.92 seconds; current allocated memory: 91.947 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 92.000 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/array_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/index' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/offset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel4' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_we1' to 0.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel4.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 927 ; free virtual = 5938
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 927 ; free virtual = 5938
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 923 ; free virtual = 5938
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'kernel4' (kernel4.cpp:3) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 923 ; free virtual = 5938
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (kernel4.cpp:17:1) in function 'kernel4'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 907 ; free virtual = 5922
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 907 ; free virtual = 5922
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel4' ...
+WARNING: [SYN 201-107] Renaming port name 'kernel4/array' to 'kernel4/array_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.35 seconds; current allocated memory: 91.963 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 92.017 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/array_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/index' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/offset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel4' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel4.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 913 ; free virtual = 5925
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 913 ; free virtual = 5925
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 909 ; free virtual = 5925
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'kernel4' (kernel4.cpp:3) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 909 ; free virtual = 5924
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 892 ; free virtual = 5908
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 892 ; free virtual = 5908
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel4' ...
+WARNING: [SYN 201-107] Renaming port name 'kernel4/array' to 'kernel4/array_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.57 seconds; current allocated memory: 91.956 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.01 seconds; current allocated memory: 92.009 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/array_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/index' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/offset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel4' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_we1' to 0.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'kernel4.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 886 ; free virtual = 5913
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 886 ; free virtual = 5913
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 876 ; free virtual = 5913
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'kernel4' (kernel4.cpp:3) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 876 ; free virtual = 5913
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 858 ; free virtual = 5895
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 936.426 ; gain = 523.035 ; free physical = 857 ; free virtual = 5895
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'kernel4' ...
+WARNING: [SYN 201-107] Renaming port name 'kernel4/array' to 'kernel4/array_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'kernel4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.3 seconds; current allocated memory: 91.905 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 91.956 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'kernel4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/array_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'kernel4/index' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'kernel4' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/array_r_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/array_r_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'kernel4/index_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'kernel4/index_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
