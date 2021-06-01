@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: kernel5_loop): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1)&#xA;   between 'fadd' operation ('sum', kernel5.cpp:9) and 'fcmp' operation ('tmp_3', kernel5.cpp:7)." projectName="prj_kernel5" solutionName="solution4" date="2021-05-16T23:49:45.725+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: kernel5_loop): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xA;   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7)." projectName="prj_kernel5" solutionName="solution4" date="2021-05-16T23:49:35.563+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: kernel5_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7)." projectName="prj_kernel5" solutionName="solution4" date="2021-05-16T23:48:37.374+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel5' (Loop: kernel5_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'fadd' operation ('sum', kernel5.cpp:9) and 'icmp' operation ('icmp_ln7_1', kernel5.cpp:7)." projectName="prj_kernel5" solutionName="solution4" date="2021-05-16T23:48:37.366+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('and' operation ('and_ln7', kernel5.cpp:7)) in the first pipeline iteration (II = 1 cycles)." projectName="prj_kernel5" solutionName="solution4" date="2021-05-16T23:48:37.355+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'b' (kernel5.cpp:3) accessed through non-constant indices on dimension 1 (kernel5.cpp:9:9), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="prj_kernel5" solutionName="solution4" date="2021-05-16T23:44:22.175+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'a' (kernel5.cpp:3) accessed through non-constant indices on dimension 1 (kernel5.cpp:9:9), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="prj_kernel5" solutionName="solution4" date="2021-05-16T23:44:22.150+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
