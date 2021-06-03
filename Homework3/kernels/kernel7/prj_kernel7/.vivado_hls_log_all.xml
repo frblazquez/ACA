@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="solution5" date="2021-05-17T08:54:15.156+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="solution5" date="2021-05-17T08:54:03.986+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="solution5" date="2021-05-17T08:54:03.976+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'b' (kernel7.cpp:3) accessed through non-constant indices on dimension 1 (kernel7.cpp:8:33), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="prj_kernel7" solutionName="solution5" date="2021-05-17T08:49:15.359+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'a' (kernel7.cpp:3) accessed through non-constant indices on dimension 1 (kernel7.cpp:8:33), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="prj_kernel7" solutionName="solution5" date="2021-05-17T08:49:15.339+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:16) and 'fadd' operation ('sum', kernel7.cpp:17)." projectName="prj_kernel7" solutionName="solution7" date="2021-05-17T08:43:24.078+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:16) and 'fadd' operation ('sum', kernel7.cpp:17)." projectName="prj_kernel7" solutionName="solution7" date="2021-05-17T08:43:24.067+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:16) and 'fadd' operation ('sum', kernel7.cpp:17)." projectName="prj_kernel7" solutionName="solution7" date="2021-05-17T08:43:24.056+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:8) and 'fadd' operation ('sum', kernel7.cpp:9)." projectName="prj_kernel7" solutionName="solution6" date="2021-05-16T17:14:26.777+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:8) and 'fadd' operation ('sum', kernel7.cpp:9)." projectName="prj_kernel7" solutionName="solution6" date="2021-05-16T17:14:26.774+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:8) and 'fadd' operation ('sum', kernel7.cpp:9)." projectName="prj_kernel7" solutionName="solution6" date="2021-05-16T17:14:26.768+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:8) and 'fadd' operation ('sum', kernel7.cpp:9)." projectName="prj_kernel7" solutionName="solution3" date="2021-05-16T16:15:28.893+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:8) and 'fadd' operation ('sum', kernel7.cpp:9)." projectName="prj_kernel7" solutionName="solution3" date="2021-05-16T16:15:28.886+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:8) and 'fadd' operation ('sum', kernel7.cpp:9)." projectName="prj_kernel7" solutionName="solution3" date="2021-05-16T16:15:28.878+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="solution2" date="2021-05-16T16:12:56.816+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="solution2" date="2021-05-16T16:12:56.811+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel7' (Loop: kernel7_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'select' operation ('sum', kernel7.cpp:9) and 'fadd' operation ('sum', kernel7.cpp:10)." projectName="prj_kernel7" solutionName="solution2" date="2021-05-16T16:12:56.803+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
