@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: kernel8_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between wire write on port 'array_6' (kernel8.cpp:6) and wire read on port 'array_6' (kernel8.cpp:6)." projectName="prj_kernel8" solutionName="solution4" date="2021-05-16T17:49:22.928+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'array' (kernel8.cpp:3) accessed through non-constant indices on dimension 1 (kernel8.cpp:6:9), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="prj_kernel8" solutionName="solution4" date="2021-05-16T17:45:06.078+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: kernel8_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'store' operation ('array_0_addr_1_write_ln6', kernel8.cpp:6) of variable 'mul_ln6', kernel8.cpp:6 on array 'array_0' and 'load' operation ('array_0_load', kernel8.cpp:6) on array 'array_0'." projectName="prj_kernel8" solutionName="solution3" date="2021-05-16T17:34:37.754+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: kernel8_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'store' operation ('array_0_addr_1_write_ln6', kernel8.cpp:6) of variable 'mul_ln6', kernel8.cpp:6 on array 'array_0' and 'load' operation ('array_0_load', kernel8.cpp:6) on array 'array_0'." projectName="prj_kernel8" solutionName="solution3" date="2021-05-16T17:34:37.747+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: kernel8_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'store' operation ('array_0_addr_1_write_ln6', kernel8.cpp:6) of variable 'mul_ln6', kernel8.cpp:6 on array 'array_0' and 'load' operation ('array_0_load', kernel8.cpp:6) on array 'array_0'." projectName="prj_kernel8" solutionName="solution3" date="2021-05-16T17:34:37.736+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: kernel8_loop): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between 'store' operation ('array_addr_1_write_ln6', kernel8.cpp:6) of variable 'mul_ln6', kernel8.cpp:6 on array 'array_r' and 'load' operation ('array_load', kernel8.cpp:6) on array 'array_r'." projectName="prj_kernel8" solutionName="solution2" date="2021-05-16T17:19:46.648+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: kernel8_loop): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between 'store' operation ('array_addr_1_write_ln6', kernel8.cpp:6) of variable 'mul_ln6', kernel8.cpp:6 on array 'array_r' and 'load' operation ('array_load', kernel8.cpp:6) on array 'array_r'." projectName="prj_kernel8" solutionName="solution2" date="2021-05-16T17:19:46.640+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'kernel8' (Loop: kernel8_loop): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between 'store' operation ('array_addr_1_write_ln6', kernel8.cpp:6) of variable 'mul_ln6', kernel8.cpp:6 on array 'array_r' and 'load' operation ('array_load', kernel8.cpp:6) on array 'array_r'." projectName="prj_kernel8" solutionName="solution2" date="2021-05-16T17:19:46.632+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel8/array' to 'kernel8/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel8" solutionName="solution2" date="2021-05-16T17:19:46.599+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'kernel8/array' to 'kernel8/array_r' to avoid the conflict with HDL keywords or other object names." projectName="prj_kernel8" solutionName="solution1" date="2021-05-16T17:18:43.270+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
