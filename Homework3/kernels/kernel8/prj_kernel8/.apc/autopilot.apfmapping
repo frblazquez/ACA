@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="kernel8.cpp" path="/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Homeworks/homework_3/kernels/kernel8/kernel8.cpp"/>
-  </source>
-  <testbench>
-    <originFiles name="kernel8_test.cpp" path="/home/francisco/Documents/Universidad/5_Carrera/Advanced_Computer_Architecture/Homeworks/homework_3/kernels/kernel8/kernel8_test.cpp"/>
-  </testbench>
-</autopilotfilemapping:AutoPilotFileMapping>
